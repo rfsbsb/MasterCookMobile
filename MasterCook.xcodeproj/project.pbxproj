@@ -21,6 +21,9 @@
 		5AA0B1F619C4A82600BAA779 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA0B1D819C4A82600BAA779 /* UIKit.framework */; };
 		5AA0B1FE19C4A82600BAA779 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AA0B1FC19C4A82600BAA779 /* InfoPlist.strings */; };
 		5AA0B20019C4A82600BAA779 /* MasterCookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B1FF19C4A82600BAA779 /* MasterCookTests.m */; };
+		5AA0F1331A0AABF300C3AE92 /* RFSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0F1321A0AABF300C3AE92 /* RFSClient.m */; };
+		5AAF954A1A12B61B00B260BB /* RFSUsuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAF95491A12B61B00B260BB /* RFSUsuario.m */; };
+		C733440173582E2723E20743 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DB77E6A3270C1D3A07FCA4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09F1EADCF21F422760309576 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0F4FB4B2D02E92240F7F6266 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5AA0B1D119C4A82600BAA779 /* MasterCook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterCook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA0B1D419C4A82600BAA779 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5AA0B1D619C4A82600BAA779 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,11 @@
 		5AA0B1FB19C4A82600BAA779 /* MasterCookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MasterCookTests-Info.plist"; sourceTree = "<group>"; };
 		5AA0B1FD19C4A82600BAA779 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5AA0B1FF19C4A82600BAA779 /* MasterCookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterCookTests.m; sourceTree = "<group>"; };
+		5AA0F1311A0AABF300C3AE92 /* RFSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFSClient.h; path = Support/RFSClient.h; sourceTree = "<group>"; };
+		5AA0F1321A0AABF300C3AE92 /* RFSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RFSClient.m; path = Support/RFSClient.m; sourceTree = "<group>"; };
+		5AAF95481A12B61B00B260BB /* RFSUsuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RFSUsuario.h; path = Model/RFSUsuario.h; sourceTree = "<group>"; };
+		5AAF95491A12B61B00B260BB /* RFSUsuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RFSUsuario.m; path = Model/RFSUsuario.m; sourceTree = "<group>"; };
+		A3DB77E6A3270C1D3A07FCA4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 				5AA0B1D719C4A82600BAA779 /* CoreGraphics.framework in Frameworks */,
 				5AA0B1D919C4A82600BAA779 /* UIKit.framework in Frameworks */,
 				5AA0B1D519C4A82600BAA779 /* Foundation.framework in Frameworks */,
+				C733440173582E2723E20743 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +97,7 @@
 				5AA0B1F919C4A82600BAA779 /* MasterCookTests */,
 				5AA0B1D319C4A82600BAA779 /* Frameworks */,
 				5AA0B1D219C4A82600BAA779 /* Products */,
+				E0D0982D796F13196A2AE96A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +117,7 @@
 				5AA0B1D619C4A82600BAA779 /* CoreGraphics.framework */,
 				5AA0B1D819C4A82600BAA779 /* UIKit.framework */,
 				5AA0B1F319C4A82600BAA779 /* XCTest.framework */,
+				A3DB77E6A3270C1D3A07FCA4 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +125,8 @@
 		5AA0B1DA19C4A82600BAA779 /* MasterCook */ = {
 			isa = PBXGroup;
 			children = (
+				5AA0F1301A0AABA600C3AE92 /* Support */,
+				5AA0F12F1A0AA49800C3AE92 /* Model */,
 				5AA0B1E319C4A82600BAA779 /* RFSAppDelegate.h */,
 				5AA0B1E419C4A82600BAA779 /* RFSAppDelegate.m */,
 				5AA0B1E619C4A82600BAA779 /* Main.storyboard */,
@@ -152,6 +167,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5AA0F12F1A0AA49800C3AE92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5AAF95481A12B61B00B260BB /* RFSUsuario.h */,
+				5AAF95491A12B61B00B260BB /* RFSUsuario.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5AA0F1301A0AABA600C3AE92 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5AA0F1311A0AABF300C3AE92 /* RFSClient.h */,
+				5AA0F1321A0AABF300C3AE92 /* RFSClient.m */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		E0D0982D796F13196A2AE96A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F4FB4B2D02E92240F7F6266 /* Pods.debug.xcconfig */,
+				09F1EADCF21F422760309576 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AA0B20319C4A82600BAA779 /* Build configuration list for PBXNativeTarget "MasterCook" */;
 			buildPhases = (
+				E51F9885044ED09A782EC857 /* Check Pods Manifest.lock */,
 				5AA0B1CD19C4A82600BAA779 /* Sources */,
 				5AA0B1CE19C4A82600BAA779 /* Frameworks */,
 				5AA0B1CF19C4A82600BAA779 /* Resources */,
+				FC68F051079568F062309803 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +244,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Rafael Ferreira Silva";
 				TargetAttributes = {
+					5AA0B1D019C4A82600BAA779 = {
+						DevelopmentTeam = 39PCB2F3S9;
+					};
 					5AA0B1F119C4A82600BAA779 = {
 						TestTargetID = 5AA0B1D019C4A82600BAA779;
 					};
@@ -245,13 +292,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E51F9885044ED09A782EC857 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC68F051079568F062309803 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5AA0B1CD19C4A82600BAA779 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA0F1331A0AABF300C3AE92 /* RFSClient.m in Sources */,
 				5AA0B1E519C4A82600BAA779 /* RFSAppDelegate.m in Sources */,
 				5AA0B1E119C4A82600BAA779 /* main.m in Sources */,
+				5AAF954A1A12B61B00B260BB /* RFSUsuario.m in Sources */,
 				5AA0B1EB19C4A82600BAA779 /* RFSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +456,7 @@
 		};
 		5AA0B20419C4A82600BAA779 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4FB4B2D02E92240F7F6266 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +470,7 @@
 		};
 		5AA0B20519C4A82600BAA779 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F1EADCF21F422760309576 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +541,7 @@
 				5AA0B20519C4A82600BAA779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AA0B20619C4A82600BAA779 /* Build configuration list for PBXNativeTarget "MasterCookTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +550,7 @@
 				5AA0B20819C4A82600BAA779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

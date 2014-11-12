@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RFSClient.h"
+#import "TSMessage.h"
 
-@interface RFSViewController : UIViewController
+@interface RFSViewController : UIViewController <UITextFieldDelegate>
 
+@property (strong, nonatomic) RFSClient *client;
+
+@property (weak, nonatomic) IBOutlet UITextField *usuario;
+@property (weak, nonatomic) IBOutlet UITextField *senha;
+- (IBAction)efetuarLogin:(UIButton *)sender;
+- (IBAction)tocouView:(UIView *)sender;
+- (IBAction)textFieldRetorno:(UITextField *)sender;
 @end
