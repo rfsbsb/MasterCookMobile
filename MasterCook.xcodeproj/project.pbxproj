@@ -244,9 +244,6 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Rafael Ferreira Silva";
 				TargetAttributes = {
-					5AA0B1D019C4A82600BAA779 = {
-						DevelopmentTeam = 39PCB2F3S9;
-					};
 					5AA0B1F119C4A82600BAA779 = {
 						TestTargetID = 5AA0B1D019C4A82600BAA779;
 					};
@@ -460,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MasterCook/MasterCook-Prefix.pch";
 				INFOPLIST_FILE = "MasterCook/MasterCook-Info.plist";
@@ -474,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MasterCook/MasterCook-Prefix.pch";
 				INFOPLIST_FILE = "MasterCook/MasterCook-Info.plist";
