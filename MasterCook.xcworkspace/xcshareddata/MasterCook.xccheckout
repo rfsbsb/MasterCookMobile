@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B822447B-A134-4B16-9CCB-D59896CF7737</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MasterCook</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3CA0A696E54DB2897FB4823FBAA479303FEA01F5</key>
+		<string>https://github.com/rfsbsb/MasterCookMobile.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MasterCook.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3CA0A696E54DB2897FB4823FBAA479303FEA01F5</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rfsbsb/MasterCookMobile.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3CA0A696E54DB2897FB4823FBAA479303FEA01F5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3CA0A696E54DB2897FB4823FBAA479303FEA01F5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MasterCook</string>
+		</dict>
+	</array>
+</dict>
+</plist>

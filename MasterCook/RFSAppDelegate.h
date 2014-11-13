@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RFSProduto.h"
+#import "RFSUsuario.h"
+#import "RFSPedido.h"
 
 @interface RFSAppDelegate : UIResponder <UIApplicationDelegate>
 

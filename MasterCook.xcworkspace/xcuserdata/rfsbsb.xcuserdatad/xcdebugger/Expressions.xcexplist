@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[RFSProduto initWithNome:andPreco:andCategoria:andFoto:]:RFSProduto.m">
+      </ContextState>
+      <ContextState
+         contextName = "__32-[RFSListaPedidos carregarItens]_block_invoke:RFSListaPedidos.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[RFSListaProdutos tableView:cellForRowAtIndexPath:]:RFSListaProdutos.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.imageView.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[RFSClient criaPedido:withSuccess:orFailure:]:RFSClient.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[RFSListaProdutos prepareForSegue:sender:]:RFSListaProdutos.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[RFSNovoPedidoViewController viewDidLoad]:RFSNovoPedidoViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[RFSListaPedidos tableView:cellForRowAtIndexPath:]:RFSListaPedidos.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "itemAtual.produto_id">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UIImageView(AFNetworking) setImageWithURLRequest:placeholderImage:success:failure:]:UIImageView+AFNetworking.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "urlRequest">
+            </PersistentString>
+            <PersistentString
+               value = "self.image">
+            </PersistentString>
+            <PersistentString
+               value = "success">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

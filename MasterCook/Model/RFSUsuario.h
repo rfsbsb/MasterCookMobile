@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RFSAppDelegate.h"
 
 @interface RFSUsuario : NSObject
 @property (strong, nonatomic) NSString *nome;

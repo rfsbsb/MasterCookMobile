@@ -8,7 +8,7 @@
 
 #import "RFSClient.h"
 
-NSString * const urlBase = @"http://localhost:3000";
+NSString * const urlBase = @"http://localhost:8080";
 
 @implementation RFSClient
 
@@ -54,6 +54,99 @@ NSString * const urlBase = @"http://localhost:3000";
     }
   }];
 
+}
+
+/*
+ * Buscar os produtos
+ */
+-(void)listaProdutosWithSuccess:(void (^)(NSURLSessionDataTask *, id))success orFailure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+
+  NSString* path = [NSString stringWithFormat:@"products.json"];
+  NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.usuarioLogado.nome, @"user_email", self.usuarioLogado.token, @"user_token", nil];
+
+  [self GET:path parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+    if (success) {
+      success(task, responseObject);
+    }
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    if (failure) {
+      failure(task, error);
+    }
+  }];
+}
+
+- (void)criaPedido:(RFSPedido *)pedido withSuccess:(void (^)(NSURLSessionDataTask *, id))success orFailure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+
+  NSString* path = [NSString stringWithFormat:@"orders.json"];
+  NSMutableDictionary *orderParam = [[NSMutableDictionary alloc] initWithObjectsAndKeys:pedido.produto.identifier, @"product_id", pedido.quantidade, @"amount", nil];
+  NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.usuarioLogado.nome, @"user_email", self.usuarioLogado.token, @"user_token", orderParam, @"order", nil];
+
+  [self POST:path parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+    if (success) {
+      success(task, responseObject);
+    }
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    if (failure) {
+      failure(task, error);
+    }
+  }];
+}
+
+/*
+ * Buscar os produtos
+ */
+-(void)listaPedidosWithSuccess:(void (^)(NSURLSessionDataTask *, id))success orFailure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+
+  NSString* path = [NSString stringWithFormat:@"orders.json"];
+  NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.usuarioLogado.nome, @"user_email", self.usuarioLogado.token, @"user_token", nil];
+
+  [self GET:path parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+    if (success) {
+      success(task, responseObject);
+    }
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    if (failure) {
+      failure(task, error);
+    }
+  }];
+}
+
+/*
+ * Buscar os produtos
+ */
+-(void)obterProduto:(NSString*)produto withSuccess:(void (^)(NSURLSessionDataTask *, id))success orFailure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+
+  NSString* path = [NSString stringWithFormat:@"product/%@.json", produto];
+  NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.usuarioLogado.nome, @"user_email", self.usuarioLogado.token, @"user_token", nil];
+
+  [self GET:path parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+    if (success) {
+      success(task, responseObject);
+    }
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    if (failure) {
+      failure(task, error);
+    }
+  }];
+}
+
+/*
+ * Buscar os produtos
+ */
+-(void)pagarCom:(NSString*)tipo withSuccess:(void (^)(NSURLSessionDataTask *, id))success orFailure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
+
+  NSString* path = [NSString stringWithFormat:@"orders/pay.json"];
+  NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithObjectsAndKeys:self.usuarioLogado.nome, @"user_email", self.usuarioLogado.token, @"user_token", tipo, @"payment_mode", nil];
+
+  [self GET:path parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+    if (success) {
+      success(task, responseObject);
+    }
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    if (failure) {
+      failure(task, error);
+    }
+  }];
 }
 
 @end
