@@ -15,4 +15,6 @@
 @property (strong, nonatomic) NSString *usuario_id;
 @property (strong, nonatomic) RFSProduto *produto;
 
+- (id) initWithNomeProduto:(NSString*)produtoNome andIdProduto:(NSString*)produtoId andPrecoProduto:(NSString*)produto andQuantidade:(NSString*)quantidade andUser:(NSString*)usuario_id;
+
 @end

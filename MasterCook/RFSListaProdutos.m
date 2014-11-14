@@ -30,6 +30,7 @@
   [self.client listaProdutosWithSuccess:^(NSURLSessionDataTask *task, id responseObject) {
     for (NSDictionary *item in responseObject) {
       RFSProduto * produto = [[RFSProduto alloc] initWithNome:item[@"name"] andPreco:item[@"price"] andCategoria:item[@"category"] andFoto:item[@"photo"] andId:item[@"id"]];
+      produto.preco = [NSString stringWithFormat:@"Preço R$ %@", produto.preco];
       [self.produtos addObject:produto];
     }
     [self.tabelaProdutos reloadData];

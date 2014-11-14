@@ -124,7 +124,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="tJb-T7-RKk"/>
+                    <tabBarItem key="tabBarItem" title="Efetuar pagamento" image="checkout" id="tJb-T7-RKk"/>
                     <connections>
                         <outlet property="tabelaPedidos" destination="M8j-Re-GXf" id="ssj-av-Sd0"/>
                         <outlet property="tipoPagamento" destination="90W-kt-gz7" id="fHI-0Z-1rd"/>
@@ -285,11 +285,11 @@
             </objects>
             <point key="canvasLocation" x="-339" y="-722"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Novo pedido-->
         <scene sceneID="TuF-jl-wDV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wrm-lW-ZHQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="favorites" id="NPk-qo-OB6"/>
+                    <tabBarItem key="tabBarItem" title="Novo pedido" image="buy" id="NPk-qo-OB6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h1Q-xT-gVl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -306,6 +306,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="buy" width="25" height="25"/>
+        <image name="checkout" width="25" height="25"/>
         <image name="logo" width="280" height="280"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

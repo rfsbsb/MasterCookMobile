@@ -21,7 +21,7 @@
     self.client = [RFSClient sharedClient];
     // Do any additional setup after loading the view.
     self.labelNome.text = self.produto.nome;
-    self.labelPreco.text = [[NSString alloc ] initWithFormat:@"R$ %@", self.produto.preco ];
+    self.labelPreco.text = self.produto.preco;
     self.labelCategoria.text = self.produto.categoria;
 }
 

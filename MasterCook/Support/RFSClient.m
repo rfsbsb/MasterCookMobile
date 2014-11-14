@@ -8,7 +8,7 @@
 
 #import "RFSClient.h"
 
-NSString * const urlBase = @"http://localhost:8080";
+NSString * const urlBase = @"http://mastercook-env-3ypimc9hub.elasticbeanstalk.com";
 
 @implementation RFSClient
 

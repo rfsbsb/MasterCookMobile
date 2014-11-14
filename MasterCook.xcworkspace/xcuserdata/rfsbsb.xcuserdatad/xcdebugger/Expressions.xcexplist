@@ -17,7 +17,12 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[RFSClient criaPedido:withSuccess:orFailure:]:RFSClient.m">
+         contextName = "-[RFSListaPedidos tableView:cellForRowAtIndexPath:]:RFSListaPedidos.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "itemAtual.quantidade">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "-[RFSListaProdutos prepareForSegue:sender:]:RFSListaProdutos.m">
@@ -26,12 +31,7 @@
          contextName = "-[RFSNovoPedidoViewController viewDidLoad]:RFSNovoPedidoViewController.m">
       </ContextState>
       <ContextState
-         contextName = "-[RFSListaPedidos tableView:cellForRowAtIndexPath:]:RFSListaPedidos.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "itemAtual.produto_id">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "-[RFSClient criaPedido:withSuccess:orFailure:]:RFSClient.m">
       </ContextState>
       <ContextState
          contextName = "-[UIImageView(AFNetworking) setImageWithURLRequest:placeholderImage:success:failure:]:UIImageView+AFNetworking.m">
